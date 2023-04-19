@@ -134,6 +134,8 @@ public class JavaFundamentals {
 
     /**
      * Method containing System.out.printf() using common conversion characters.
+     *
+     *        % [flag] [precision] [width] [conversion-character]
      */
     public void formatPrint() {
         boolean b = true;
@@ -142,13 +144,42 @@ public class JavaFundamentals {
         int i = 3;
         double pi = 3.14;
 
-        System.out.printf(" %b ", b);
-        System.out.printf(" %c ", ch);
-        System.out.printf(" %s ", str);
-        System.out.printf(" %d ", i);
-        System.out.printf(" %f ", pi);
+        // [conversion-character]
+        System.out.printf(" %b \n", b);
+        System.out.printf(" %c \n", ch);
+        System.out.printf(" %s \n", str);
+        System.out.printf(" %d \n", i);
+        System.out.printf(" %f \n", pi);
 
-        System.out.printf("Hello, %s!", str);
+        System.out.printf("Hello, %s!\n", str);
+        newline();
+
+        // [width]
+        System.out.printf("Your string: %13s\n", "orion");  // Minimum width of is 13. Output: "        orion"
+        newline();
+
+        // [precision]
+        System.out.printf("Your balance: $%.2f\n", 13.9858488310);
+
+        // [flag]
+        // Adds an effect to output based on flag added to format specifier:
+
+        // - : left-justify
+        System.out.printf("%5s\n", "hi");
+        System.out.printf("%-5s\n", "hi");
+
+        // + : output a plus ( + ) or minus ( - ) sign for a numeric value
+        System.out.printf("%d\n", 3);
+        System.out.printf("%+d\n", 3);
+
+        // 0 : numeric values are zero-padded
+        System.out.printf("%04d\n", 777);
+        // System.out.printf("%0s\n", "yo");   *** FormatFlagsConversionMismatchException ***
+
+        // , : comma grouping separator if number > 1000
+        System.out.printf("$%,.2f\n", 50000000.0042421421);
+
+
     }
 
 
