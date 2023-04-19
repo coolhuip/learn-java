@@ -186,7 +186,7 @@ public class JavaFundamentals {
     /**
      * Print a matrix of size <b>(row)</b>, <b>(col)</b> uniformly filled w/ <b>(item)</b>.
      * <br>
-     * Return a 2D array filled w/ (<b>item</b>).
+     * Return a 2D array uniformly filled w/ <b>(item)</b>
      * @param item Object
      * @param row int
      * @param col int
