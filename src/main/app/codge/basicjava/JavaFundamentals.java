@@ -132,6 +132,25 @@ public class JavaFundamentals {
 
     }
 
+    /**
+     * Method containing System.out.printf() using common conversion characters.
+     */
+    public void formatPrint() {
+        boolean b = true;
+        char ch = 's';
+        String str = "world";
+        int i = 3;
+        double pi = 3.14;
+
+        System.out.printf(" %b ", b);
+        System.out.printf(" %c ", ch);
+        System.out.printf(" %s ", str);
+        System.out.printf(" %d ", i);
+        System.out.printf(" %f ", pi);
+
+        System.out.printf("Hello, %s!", str);
+    }
+
 
     /**
      * Print a matrix of size <b>(row)</b>, <b>(col)</b> uniformly filled w/ <b>(item)</b>.
