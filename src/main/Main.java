@@ -58,6 +58,7 @@ public class Main {
 
         CommonMethods cm = new CommonMethods();
         cm.stringMethods();
+        cm.arrayListMethods();
 
 
 
